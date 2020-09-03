@@ -5,7 +5,7 @@ console.log(fruits.push('Papaya'));
 // console.log(fruits);
 
 // Remove the last element from fruits array
-console.log(fruits.pop());
+fruits.pop();
 
 // Log the current length of fruits array
 console.log(fruits.length);
