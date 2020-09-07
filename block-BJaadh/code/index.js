@@ -21,16 +21,7 @@ console.log(strings.join(' '));
 strings.shift();
 
 // - Find all the words that contain 'is' use string method 'includes'
-function filter(arr) {
-  let final = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].includes('is')) {
-      final.push(arr[i]);
-    }
-  }
-  return final;
-}
-console.log(filter(strings));
+console.log(strings.filter((elm) => elm.includes('is')));
 
 // - Find all the words that contain 'is' use string method 'indexOf'
 
@@ -97,9 +88,3 @@ console.log(customers.map((elm) => elm.firstname + ' ' + elm.lastname));
 // - Sort the array created above alphabetically
 
 // - Create a new array that contains only user who has at least one vowel in the firstname.
-// console.log(customers.filter(cb));
-// function cb(elm) {
-//   for (let i = 0; i < elm.firstname.length; i++) {
-//     if(){};
-//   }
-// }
