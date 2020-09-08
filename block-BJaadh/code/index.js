@@ -34,6 +34,7 @@ console.log(numbers.every((elm) => elm % 3 === 0));
 strings.pop();
 
 // - Find largest number in numbers
+console.log(numbers.sort((a, b) => a - b).pop());
 
 // - Find longest string in strings
 
