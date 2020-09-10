@@ -18,7 +18,7 @@ console.log(quote.charAt(indexOfIs));
 /*
 3. Log the message saying `The index of first is in quote is 7`
 */
-console.log(`The index of first "is" in quote is 7`);
+console.log(`The index of first is in quote is ${indexOfIs}`);
 
 /*
 4. Log the message for first 6 characters of quote like this.
@@ -76,7 +76,7 @@ console.log(quoteSplitted.join(' '));
 12. Find the index of second "o" in quote. Use indexOf
 */
 console.log(quote.indexOf('o'));
-console.log(quote.indexOf('o', 10));
+console.log(quote.indexOf('o', 8));
 
 /*
 13. Find the last index of letter "a" in quote.
