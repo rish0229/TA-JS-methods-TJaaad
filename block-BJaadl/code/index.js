@@ -11,24 +11,13 @@ let words = [
 
 // - Write a function findLongestWord that takes an array of words and returns the longest word from the array. (Use above array "words" to test it). If there are 2 with the same length, it should return the first occurrence.
 function findLongestWord(arr) {
-  let length = 1;
-  let finalValue = '';
-  for (let wLength of arr) {
-    if (wLength.length > length) {
-      length = wLength.length;
-      finalValue = wLength;
-    }
-  }
-  return finalValue;
+  let sorted = [...arr].sort((a, b) => a.length - b.length).pop();
+  return words.find((elm) => elm.length == sorted.length);
 }
 console.log(findLongestWord(words));
 
 // - Convert the above array "words" into an array of length of word instead of word.
-let lengthArr = [];
-for (let wLength of words) {
-  lengthArr.push(wLength.length);
-}
-console.log(lengthArr);
+console.log(words.map((elm) => elm.length));
 
 // - Create a new array that only contains word with at least one vowel.
 function callback1(elm) {
