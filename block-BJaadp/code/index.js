@@ -113,11 +113,6 @@ Use the fruitBasket array to create an array of array. Each array will contain t
 Output: 
 [['banana', 2], ['cherry', 3], ['orange', 3], ['apple', 2], ['fig', 1]]
 */
-console.log(
-  fruitBasket.reduce((acc, elm) => {
-    return acc;
-  }, [])
-);
 
 const data = [
   [1, 2, 3],
@@ -161,23 +156,23 @@ console.log(
 
 /*
 Create these functions which accepts a number value and returns a number value:
-  - `increment` adds one to the input value
+  - 'increment' adds one to the input value
   - `double` doubles the input value
   - `decrement` decrement 1 from the value 
   - `triple` triples the input 
   - `half` converts the value to half and return the integer value not decimal (use Math.round(21.5) => 21)
 */
 
-let pipeline = [
-  'increment',
-  'double',
-  'decrement',
-  'decrement',
-  'double',
-  'triple',
-  'half',
-  'increment',
-];
+// let pipeline = [
+//   increment,
+//   double,
+//   decrement,
+//   decrement,
+//   double,
+//   triple,
+//   half,
+//   increment,
+// ];
 
 /*
 Using the pipeline variable that contains the collection of functions, taking the initial value 3 find the output.
@@ -186,24 +181,24 @@ NOTE: Initial value will be passed to first function the output of that function
 
 EXAMPLE:
   initialValue - 3
-  increment(3) - return 4
+increment3) - return 4
   double(4) - return 8
   decrement(8) - return 7
   ...
 */
 
-let pipeline2 = [
-  'increment',
-  'half',
-  'double',
-  'decrement',
-  'decrement',
-  'triple',
-  'double',
-  'triple',
-  'half',
-  'increment',
-  'triple',
-];
+// let pipeline2 = [
+//   increment,
+//   half,
+//   double,
+//   decrement,
+//   decrement,
+//   triple,
+//   double,
+//   triple,
+//   half,
+//   increment,
+//   triple,
+// ];
 
 // Find the output using pipeline2 the initial value if 8
