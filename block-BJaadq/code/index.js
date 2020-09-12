@@ -1,35 +1,93 @@
 // NOTE: You can not use reduce methods to solve this exercise
 
 function countAllPeople() {
-  // your code goes here
+  let finalArray = [];
+  for (let house of got.houses) {
+    for (let people of house.people) {
+      finalArray.push(people.name);
+    }
+  }
+  return finalArray.length;
 }
 
 function peopleByHouses() {
-  // your code goes here
+  let obj = {};
+  for (let house of got.houses) {
+    obj[house.name] = house.people.length;
+  }
+  return obj;
 }
 
 function everyone() {
-  // your code goes here
+  let finalArray = [];
+  for (let house of got.houses) {
+    for (let people of house.people) {
+      finalArray.push(people.name);
+    }
+  }
+  return finalArray;
 }
 
 function nameWithS() {
-  // your code goes here
+  let finalArray = [];
+  for (let house of got.houses) {
+    for (let people of house.people) {
+      finalArray.push(people.name);
+    }
+  }
+  return finalArray.filter((elm) => elm.toLowerCase().indexOf('s') > -1);
 }
 
 function nameWithA() {
-  // your code goes here
+  let finalArray = [];
+  for (let house of got.houses) {
+    for (let people of house.people) {
+      finalArray.push(people.name);
+    }
+  }
+  return finalArray.filter((elm) => elm.toLowerCase().indexOf('a') > -1);
 }
 
 function surnameWithS() {
-  // your code goes here
+  let finalArray = [];
+  for (let house of got.houses) {
+    for (let people of house.people) {
+      finalArray.push(people.name);
+    }
+  }
+  return finalArray.filter((elm) => {
+    let split = elm.toLowerCase().split(' ');
+    if (split[1][0] === 's') {
+      return true;
+    }
+  });
 }
 
 function surnameWithA() {
-  // your code goes here
+  let finalArray = [];
+  for (let house of got.houses) {
+    for (let people of house.people) {
+      finalArray.push(people.name);
+    }
+  }
+  return finalArray.filter((elm) => {
+    let split = elm.toLowerCase().split(' ');
+    if (split[1][0] === 'a') {
+      return true;
+    }
+  });
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+  let obj = {};
+  for (let house of got.houses) {
+    let people = [];
+    for (let peopleName of house.people) {
+      people.push(peopleName.name);
+    }
+    obj[house.name] = people;
+  }
+  return obj;
 }
 
 // Testing your result after writing your function
